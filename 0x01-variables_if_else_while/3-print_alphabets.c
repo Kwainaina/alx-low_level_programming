@@ -20,6 +20,6 @@ while (up <= 'Z')
 putchar(up);
 up += 1;
 }
-putchar('n');
+putchar('\n');
 return (0);
 }
