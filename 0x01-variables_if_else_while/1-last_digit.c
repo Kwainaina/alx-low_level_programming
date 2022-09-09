@@ -3,30 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - assign a random number to the variable n each time it is executed
- * The string Last digit of n
- * Return: 0
+ * main - Entry point
+ * 
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-int n;
-int lastn;
+int n, last_digit;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-lastn = n % 10;
-if (lastn > 5)
+last_digit = n % 10;
+
+if (last_digit > 5)
 {
-printf("Last digit of &d is &d and is greater than 5\n", n, lastn);
+printf("Last digit of &d is &d and is greater than 5\n", n, last_digit);
 }
-else if (lastn == 0)
+else if (last_digit == 0)
 {
-printf("Last digit of &d is &d and is 0\n", n, lastn);
+printf("Last digit of &d is &d and is 0\n", n, last_digit);
 }
-else if (lastn < 6 && lastn != 0)
+else if (last_digit < 6 && last_digit != 0)
 {
-printf("Last digit of &d is &d and is less than 6 and not 0\n", n, lastn);
+printf("Last digit of &d is &d and is less than 6 and not 0\n", n, last_digit);
 }
 return (0);
 }
