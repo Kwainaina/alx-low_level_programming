@@ -1,12 +1,12 @@
 #include "main.h"
-
+a
 /**
  * print_alphabet - function that prints the alphabet, lowercase
  * You can only use _putchar twice in your code
- * Return: nothing.
+ * Return: Always 0.
  */
 
-void print_alphabet(void)
+int main(void)
 {
 	int l = 'a';
 

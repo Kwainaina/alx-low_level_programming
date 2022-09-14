@@ -3,19 +3,16 @@
 
 
 /**
- * print alphabet -  function that prints the alphabet, in lowercase
- * You can only use _putchar
- * Return: nothing.
+ * main - program that prints _putchar, followed by a new line 
+ *
+ * Return: Always 0.
  */
 
-void print_alphabet(void)
+int main(void)
 {
-	int l = 'a';
+	int n = 0;
 
-	while (l <= 'z')
-	{
-		_putchar(l)
-		l += 1;
-	}
-	_putchar(10);
+	printf("\n, _putchar")
+
+return 0;
 }
