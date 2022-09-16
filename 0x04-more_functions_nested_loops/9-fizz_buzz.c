@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - function that checks for uppercase character.
+ * main - program that prints the numbers from 1 to 100
+ * followed by a new line
  * Return: 0
  */
 int main(void)
