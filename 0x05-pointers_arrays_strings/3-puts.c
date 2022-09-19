@@ -5,8 +5,8 @@
  * _puts - prints a string
  * @str: string to print
  *
- * Description: prints to a string
- * Return: nothing
+ * Description: prints a string
+ * On success: returns no error
  *
  */
 
