@@ -3,8 +3,8 @@
 
 /**
  * cap_string - function that capitalizes all words of a string
- * @str: string to capitalize
- * Return: capitalized string
+ * @str: pointer to char
+ * Return: char
  */
 
 char *cap_string(char *str)
@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	while (str[++index])
 	{
-		while (!(str[inde] >= 'a' && str[index] <= 'z'))
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
 			index++;
 
 		if (str[index - 1] == ' ' ||
