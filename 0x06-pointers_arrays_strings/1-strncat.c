@@ -6,7 +6,7 @@
  *
  * @dest: source
  * @src: source
- * #n: number of bytes to receive
+ * @n: number of bytes to receive
  * Return: char
  */
 
