@@ -7,7 +7,7 @@
  * @dest: destination
  * @src: source
  * @n: number of bytes
- * Retur: char
+ * Return: char
  */
 
 char *_strncpy(char *dest, char *src, int n)
