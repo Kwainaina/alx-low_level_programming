@@ -4,28 +4,31 @@
 /**
  * _strpbrk - function that searches a string for any of a set of bytes
  * @s: source
- * @accept: accepted string
+ * @accept: accepted characters
  *
- * Return: number of bytes
+ *
+ * Return: string
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int a = 0, b, t = 0;
+	int a = 0, b;
 
-	while (accept[a])
+	while (s[a])
 	{
 		b = 0;
 
-		 while (s[b] != 32)
-		 {
-			 if (accept[a] == s[b])
-			 {
-				 t++;
-			 }
-			 b++;
-		 }
-		 a++;
+		while (accept[b])
+		{
+			if (s[a] == accept[b])
+			{
+				s += a;
+				return (s);
+			}
+			b++;
+		}
+		a++;
 	}
-	return (t);
+	return ('\0');
 }
+
