@@ -10,19 +10,31 @@
 
 void print_chessboard(char (*a)[8])
 {
-	int i = 0;
-	int j;
+	int rows, i, j, k;
 
-	while (i < 8)
+	k = 1;
+
+	for (i = 0; i <= rows; i++)
 	{
-		j = 0;
-		while (j < 8)
+		for (j = 1; j <= cols; j++)
 		{
-			_putchar(a[i][j]);
-			if (j == 7)
-				_putchar('\n');
-			j++;
+			if (k == 1)
+			{
+				printf("1");
+			}
+			else
+			{
+				printf("0");
+			}
+			k *= -1;
 		}
-		i++;
+
+		if (cols % 2 == 0)
+		{
+			k *= -1;
+		}
+
+		printf('\n');
 	}
+	return (0);
 }
