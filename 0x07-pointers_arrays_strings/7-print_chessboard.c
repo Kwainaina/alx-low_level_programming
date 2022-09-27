@@ -3,22 +3,26 @@
 
 /**
  * print_chessboard - function that prints the chessboard
- * @a: array of pieces
+ * @a: size of array
  *
  * Return: nothing
  */
 
 void print_chessboard(char (*a)[8])
 {
-	int b, c;
+	int i = 0;
+	int j;
 
-	for (b = 0; b < 8; b++)
+	while (i < 8)
 	{
-		for (c = 0; c < 8; c++)
-		{
-			_putchar(a[b][c]);
-		}
-		_putchar('\n');
-	}
+		 j = 0;
+		 while (j < 8)
+		 {
+			 _putchar(a[i][j]);
+			 if (j == 7 )
+				 _putchar('\n');
+			 j++;
+		 }
+		 i++;
+	 }
 }
-
