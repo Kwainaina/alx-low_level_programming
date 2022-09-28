@@ -6,7 +6,7 @@
  * square root of a number
  * @n: input number
  *
- * Return: int
+ * Return: square root of n
  */
 
 int _sqrt_recursion(int n)
