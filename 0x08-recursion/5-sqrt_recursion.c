@@ -9,26 +9,32 @@
  * Return: square root of n
  */
 
+int _sqr(int n, int i)
+
 int _sqrt_recursion(int n)
 {
-	if (n == 1 || n == 0)
-		return (n);
-	return (_sqrt(0, n));
+	int i, sqr;
+
+	sqr = i * i;
+
+	if (sqr == num)
+	{
+		return (i);
+	}
 }
-
-/**
- * _sqrt - returns the square root of a number
- * @n: test number
- * @x: squared number
- *
- * Return: square root of n
- */
-
-int _sqrt(int n, int x)
+int _sqr(int n, int i)
 {
-	if (n > x / 2)
+	int sqr;
+
+	sqr = i * i;
+
+	if (sqr > n)
+	{
 		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	}
+	if (sqr == n)
+	{
+		return (i);
+	}
+	return (_sqr(n, i + 1));
 }
