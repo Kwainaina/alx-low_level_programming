@@ -6,7 +6,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * return: int
+ * Return: int
  */
 
 int main(int argc, char *argv[])
