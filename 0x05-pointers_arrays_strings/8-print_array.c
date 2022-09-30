@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_array - function that prints n elements
+ * print_array - function that prints n elements of an array of integers
  * @n: pointer to the first int
  * @n: pointer to the second int
  * Return: nothing
