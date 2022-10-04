@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	array = malloc(sizeofchar) * size);
+	array = malloc(sizeof(char) * size);
 
 	if (array == NULL)
 		return (NULL);
