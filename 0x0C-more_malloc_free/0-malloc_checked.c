@@ -2,7 +2,7 @@
 
 /**
  * malloc_checked - function that allocates memory using malloc
- * @b: size of int
+ * @b: sizeof int
  * Return: nothing
  */
 
