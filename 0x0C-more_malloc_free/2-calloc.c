@@ -9,15 +9,34 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p;
-	unsigned int i;
+	void *cal;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	p = malloc(nmemb * size);
-	if (p == NULL)
+	cal = malloc(nmemb * size);
+	if (cal == NULL)
 		return (NULL);
-	for (i = 0; i < (nmenb * size); i++)
-		p[i] = 0;
-	return (p);
+	_memset(cal, 0, nmemb * size);
+	return (cal);
+}
+/**
+ * _memset - function that fills memory with a constant type
+ *
+ * @s: memory area to return
+ * @b: constant byte
+ * @n: size of bytes
+ * Return: char
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int 1 = 0;
+
+	while (i < n)
+	{
+
+		*(s + i) = b;
+		i += 1;
+	}
+	return (s);
 }
