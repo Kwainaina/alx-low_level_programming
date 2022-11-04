@@ -7,6 +7,7 @@
  * standard output
  * @filename: file to read
  * @letters: number of letters it should read and print
+ *
  * Return: actual numbers it could read and print
  */
 
